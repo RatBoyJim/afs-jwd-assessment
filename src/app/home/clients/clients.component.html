@@ -1,1 +1,6 @@
-<p>clients works!</p>
+<h2>Clients</h2>
+<ul class="clients">
+  <li *ngFor="let client of listData">
+    <span>{{client.first_name}}</span> {{client.last_name}}
+  </li>
+</ul>

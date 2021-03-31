@@ -15,6 +15,8 @@ const routes: Routes = [
       { path: 'home/employees', component: EmployeesComponent}
     ]
   },
+  // { path: 'home/clients', component: ClientsComponent},
+  // { path: 'home/employees', component: EmployeesComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: HomeComponent}
 ];

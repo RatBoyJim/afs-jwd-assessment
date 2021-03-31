@@ -5,9 +5,14 @@ import { ClientsComponent } from './home/clients/clients.component';
 import { EmployeesComponent } from './home/employees/employees.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'home/clients', component: ClientsComponent },
-  { path: 'home/employees', component: EmployeesComponent },
+  { 
+    path: 'home', 
+    component: HomeComponent,
+    children: [
+      { path: 'home/clients', component: ClientsComponent },
+      { path: 'home/employees', component: EmployeesComponent }
+    ]
+  },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: HomeComponent}
 ];

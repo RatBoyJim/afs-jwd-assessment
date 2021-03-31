@@ -8,11 +8,13 @@ import * as data from '../../../assets/mock_data_(4).json'
 })
 export class ClientsComponent implements OnInit {
 
-  listData = data;
+  listData = Object.values(data);
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log("data: ", this.listData);
+    
   }
 
 }

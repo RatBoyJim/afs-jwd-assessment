@@ -6,18 +6,24 @@ import { EmployeesComponent } from './home/employees/employees.component';
 import { AuthGuard } from './auth/auth.guard'
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { 
     path: 'home', 
     component: HomeComponent,
     canActivate: [AuthGuard],
     children: [
-      { path: 'home/clients', component: ClientsComponent},
-      { path: 'home/employees', component: EmployeesComponent}
-    ]
+      { 
+        path: 'clients', 
+        component: ClientsComponent
+      },
+      { 
+        path: 'employees',
+        component: EmployeesComponent
+      },
+    ],
   },
   // { path: 'home/clients', component: ClientsComponent},
   // { path: 'home/employees', component: EmployeesComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: HomeComponent}
 ];
 

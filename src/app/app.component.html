@@ -1,5 +1,12 @@
 <h1>
   {{ title }}
 </h1>
+<nav>
+  <ul>
+    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/home/clients" routerLinkActive="active">Clients</a></li>
+    <li><a routerLink="/home/employees" routerLinkActive="active">Employees</a></li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>
 <app-home></app-home>

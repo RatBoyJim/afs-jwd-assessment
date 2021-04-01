@@ -12,6 +12,8 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzTableModule } from 'ng-zorro-antd/table';
 
+import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
@@ -34,7 +36,8 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     NzLayoutModule,
     NzBreadCrumbModule,
-    NzTableModule
+    NzTableModule,
+    AmplifyUIAngularModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

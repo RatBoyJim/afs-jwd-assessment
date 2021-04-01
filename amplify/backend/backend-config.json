@@ -13,5 +13,22 @@
       "providerPlugin": "awscloudformation",
       "type": "manual"
     }
+  },
+  "api": {
+    "afsjwdassessment": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authafsjwdassessment6ea6d2c56ea6d2c5"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
   }
 }

@@ -9,6 +9,7 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
     CommonModule,
     AppRoutingModule,
     NzLayoutModule,
-    NzBreadCrumbModule
+    NzBreadCrumbModule,
+    NzTableModule
   ]
 })
 export class HomeModule { }

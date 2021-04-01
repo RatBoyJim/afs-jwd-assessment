@@ -28,6 +28,19 @@
         margin: 16px 0;
       }
 
+    a:link { /* Essentially means a[href], or that the link actually goes somewhere */
+        color: blue;
+        }
+    a:visited {
+        color: purple;
+        }
+    a:hover {
+        color: green;
+        }
+    a:active {
+        color: red;
+        }
+
       .inner-content {
         background: #fff;
         padding: 24px;

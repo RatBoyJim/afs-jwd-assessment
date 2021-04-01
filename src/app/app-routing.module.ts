@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home/home.component';
 import { ClientsComponent } from './home/clients/clients.component';
 import { EmployeesComponent } from './home/employees/employees.component';
+import { AuthComponent } from './auth/auth.component'
 import { AuthGuard } from './auth/auth.guard'
 
 const routes: Routes = [
@@ -22,8 +23,7 @@ const routes: Routes = [
       },
     ],
   },
-  // { path: 'home/clients', component: ClientsComponent},
-  // { path: 'home/employees', component: EmployeesComponent},
+  { path: 'login', component: AuthComponent},
   { path: '**', component: HomeComponent}
 ];
 

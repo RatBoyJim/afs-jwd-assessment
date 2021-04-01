@@ -1,9 +1,19 @@
-<p>home works!</p>
-<nav>
-    <ul>
-        <li><a routerLink="clients">Clients</a></li>
-        <li><a routerLink="employees">Employees</a></li>
-    </ul>
-</nav>
-
-<router-outlet></router-outlet>
+<nz-layout class="layout">
+      <nz-header>
+        <div class="logo"></div>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal">
+        </ul>
+      </nz-header>
+      <nz-content>
+        <nz-breadcrumb>
+          <nz-breadcrumb-item><a routerLink="">Home</a></nz-breadcrumb-item>
+          <nz-breadcrumb-item><a routerLink="clients">Clients</a></nz-breadcrumb-item>
+          <nz-breadcrumb-item><a routerLink="employees">Employees</a></nz-breadcrumb-item>
+        </nz-breadcrumb>
+        <div class="inner-content">
+            Content
+            <router-outlet></router-outlet>
+        </div>
+      </nz-content>
+      <nz-footer>Michael Anderson</nz-footer>
+    </nz-layout>

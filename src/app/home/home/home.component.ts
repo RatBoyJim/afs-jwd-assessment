@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
 
 @Component({

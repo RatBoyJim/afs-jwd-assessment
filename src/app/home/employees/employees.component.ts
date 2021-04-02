@@ -14,6 +14,8 @@ export class EmployeesComponent implements OnInit {
 
   allTodos:any;
 
+  toDoList:any;
+
   todoDetails = {
       name: 'Todo 1',
       description: 'Learn AWS AppSync'
@@ -24,6 +26,8 @@ export class EmployeesComponent implements OnInit {
   async ngOnInit() {
     this.allTodos = await (API.graphql({ query: queries.listTodos }));
     console.log(this.allTodos);
+    this.toDoList = Object.values(this.allTodos.data.listTodos.items);
+    console.log(this.toDoList);
   }
 
   async createToDo() {

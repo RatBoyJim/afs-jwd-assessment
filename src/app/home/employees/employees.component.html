@@ -1,1 +1,7 @@
 <button (click)="createToDo()">Create A ToDo</button>
+
+<ul class="heroes">
+  <li *ngFor="let ToDo of toDoList">
+      <p class="badge">{{ToDo.description}}</p>
+  </li>
+</ul>

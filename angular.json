@@ -23,7 +23,7 @@
               "module.rules": "append"
               },
               "replaceDuplicatePlugins": true
-            }
+            },
             "outputPath": "dist/afs-jwd-assessment",
             "index": "src/index.html",
             "main": "src/main.ts",

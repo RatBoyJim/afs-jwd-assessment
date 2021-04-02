@@ -32,6 +32,7 @@ export class EmployeesComponent implements OnInit {
 
   async createToDo() {
     const newTodo = await API.graphql(graphqlOperation(mutations.createTodo, {input: this.todoDetails}));
+    this.toDoList.push(this.todoDetails);
   }
 
 

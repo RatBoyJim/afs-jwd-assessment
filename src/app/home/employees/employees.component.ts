@@ -11,18 +11,27 @@ import * as subscriptions from '../../../graphql/subscriptions';
   styleUrls: ['./employees.component.scss']
 })
 export class EmployeesComponent implements OnInit {
-  
+
   allTodos:any;
+
+  todoDetails = {
+      name: 'Todo 1',
+      description: 'Learn AWS AppSync'
+    }
 
   constructor() { }
 
   async ngOnInit() {
     this.allTodos = await (API.graphql({ query: queries.listTodos }));
-    // const allTodos = await API.graphql(graphqlOperation(getAllTodos), authMode: 'AWS_IAM');
     console.log(this.allTodos);
   }
 
-  async listTodos(){
+  async createToDo() {
+    const newTodo = await API.graphql(graphqlOperation(mutations.createTodo, {input: this.todoDetails}));
+  }
+
+
+  async listTodos() {
     this.allTodos = await (API.graphql({ query: queries.listTodos }));
   }
 

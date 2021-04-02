@@ -1,26 +1,26 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-afsjwdassessment-dev-170141-authRole",
-            "UnauthRoleArn": "arn:aws:iam::894180678296:role/amplify-afsjwdassessment-dev-170141-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::894180678296:role/amplify-afsjwdassessment-dev-170141-authRole",
-            "Region": "eu-west-1",
-            "DeploymentBucketName": "amplify-afsjwdassessment-dev-170141-deployment",
-            "UnauthRoleName": "amplify-afsjwdassessment-dev-170141-unauthRole",
-            "StackName": "amplify-afsjwdassessment-dev-170141",
-            "StackId": "arn:aws:cloudformation:eu-west-1:894180678296:stack/amplify-afsjwdassessment-dev-170141/8e99a130-9303-11eb-87c9-02db988f79c1",
-            "AmplifyAppId": "d34dgfp9norlvb"
-        },
-        "categories": {
-            "auth": {
-                "afsjwdassessment6ea6d2c56ea6d2c5": {}
-            },
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d34dgfp9norlvb",
-                    "type": "manual"
-                }
-            }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-afsjwdassessment-dev-170141-authRole",
+      "UnauthRoleArn": "arn:aws:iam::894180678296:role/amplify-afsjwdassessment-dev-170141-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::894180678296:role/amplify-afsjwdassessment-dev-170141-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-afsjwdassessment-dev-170141-deployment",
+      "UnauthRoleName": "amplify-afsjwdassessment-dev-170141-unauthRole",
+      "StackName": "amplify-afsjwdassessment-dev-170141",
+      "StackId": "arn:aws:cloudformation:eu-west-1:894180678296:stack/amplify-afsjwdassessment-dev-170141/8e99a130-9303-11eb-87c9-02db988f79c1",
+      "AmplifyAppId": "d34dgfp9norlvb"
+    },
+    "categories": {
+      "auth": {
+        "afsjwdassessment6ea6d2c56ea6d2c5": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d34dgfp9norlvb",
+          "type": "manual"
         }
+      }
     }
+  }
 }
